@@ -170,7 +170,7 @@ function Refresh()
     {
         if("username" in localStorage)
             localStorage.removeItem("username");
-        window.open("Login.html");
+        window.open("Login.html", "_self");
     }
 
     function load()
