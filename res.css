@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Rubik+Moonrocks&display=swap');
+body {
+    margin: 0;
+    }
+  h1 {
+    color: rgb(240, 11, 11);
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size:40px;
+   }
+  h2 {
+    color: rgb(240, 10, 10);
+    text-align: center;
+    font-size:18px;
+  }
+  h5 {
+    color: rgb(240, 10, 10);
+    text-align: center;
+    font-size:14px;
+  }
+  
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em;
+    overflow: hidden;
+    background:rgb(245, 71, 18);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 254, 254);
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:#c24442;
+  }
+  
+  li a.active {
+    color: rgb(247, 244, 242);
+    background-color: #f87c7c
+  ;
+  }
+  
+  .btn-group {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+.leaflet-container {
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    max-height: 100%;
+    margin:auto;
+}
+
+.choice
+{
+  text-align: center;
+  font-size: 18px;
+  color: rgb(221, 40, 16);
+  padding: 1%;
+}
+
+label,select
+{
+  display: inline-block;
+  vertical-align: middle;
+} 
+
+
+button {
+  border: 0px;
+  background: #b90000;
+  border-radius: 4px;
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+  transition: 0.2s ease-in all;
+  width: 100px;
+  height:30px;
+  margin:2%;
+}
+
+button:focus { outline: none;}
+button:hover {background: rgba(134, 62, 62, 0.3);}
+
+#hotline
+{
+  background:rgb(245, 71, 18);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+}

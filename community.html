@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+    <ul>
+        <li><a class = "active" href="index.html">Home</a></li>
+        <li><a href="rank.html">Rank</a></li>
+        <li><a href="risk.html">Risk</a></li>
+        <li><a href="resource.html">Resources</a></li>
+        <li><a class = "active" href="Login.html">Community</a></li>
+    </ul>
+    <h1>Stree</h1>
+    
+    <div id="stickies-container"></div>
+    <div class="sticky-form">
+        <label for="stickytitle">Post Title:</label>
+        <input type="text" name="stickytitle" id="stickytitle" />
+        <label for="stickytext">Write your thoughts:</label>
+        <textarea
+            name="stickytext"
+            id="stickytext"
+            cols="24"
+            rows="10"
+        ></textarea>
+        <button class="button" id="createsticky" onclick="createSticky()">Post</button>
+        <button class="button" id="logout" onclick="logout()">Logout</button>
+    </div>
+    <script src = "community.js"></script>
+ 
+</body>
+</html>

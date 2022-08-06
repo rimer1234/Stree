@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  color:rgb(92, 92, 92);
+}
+  
+button {
+    border: 0px;
+     background-color:rgb(245, 71, 18);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in all;
+    width: 100px;
+    height:30px;
+    margin:2%;
+  }
+  
+  button:focus { outline: none;}
+  button:hover {background: rgba(245, 71, 18, 0.5);}
+
+  h1 {
+    color: rgb(240, 11, 11);
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size:40px;
+   }
+
+
+ h2{
+  text-align: center;
+  color: #EA6c00;
+}
+
+#container
+{
+	text-align:center;
+}
+#qns
+{
+	text-align:center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+  overflow: hidden;
+  background:rgb(245, 71, 18);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 254, 254);
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#f0b29f;
+}
+
+li a.active {
+  color: rgb(247, 244, 242);
+  background-color: #f87c7c
+;
+}
+
+.btn-group {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+}

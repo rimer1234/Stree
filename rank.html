@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stree</title>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <link rel="stylesheet" href="rank.css">
+  </head>
+  <body>
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a class = "active" href="rank.html">Rank</a></li>
+        <li><a href="risk.html">Risk</a></li>
+        <li><a href="resource.html">Resources</a></li>
+        <li><a href="Login.html">Community</a></li>
+    </ul>
+    <h1>Stree</h1>
+    <h2>Where Would You Rather Be?</h2>
+
+
+    <div class="choice">
+      <button onclick="SubmitLit()">Literacy</button>  
+      <button onclick="SubmitTeen()">Teen Pregnancy</button>  
+      <button onclick="SubmitHome()">Home Ownership</button>  
+      <button onclick="SubmitBank()">Bank Account Ownership</button>  
+      <button onclick="SubmitViol()">Domestic Violence</button>  
+    </div>
+
+<h3 id = "desc"></h3>
+
+<div id = "container">
+   <div id="myChart" class="chart--container" >
+  </div>
+  <table style="width:60%;">
+    <tr>
+      <th style="background-color:#EC9A00">Best</th>
+      <th style="background-color:#c52d1c">Worst</th>
+    </tr>
+    <tr>
+      <td id ="best1" style="background-color:#EDB300"></td>
+      <td id = "worst1" style="background-color:#e43e28"></td>
+    </tr>
+    <tr>
+      <td id ="best2" style="background-color:#EDCA00"></td>
+      <td id = "worst2" style="background-color:#f24828"></td>
+    </tr>
+    <tr>
+      <td id ="best3" style="background-color:#EEDD02"></td>
+      <td id = "worst3" style="background-color:rgb(238, 120, 99)"></td>
+    </tr>
+    <tr>
+      <td id ="best4" style="background-color:#F3e663"></td>
+      <td id = "worst4" style="background-color:rgb(243, 133, 114)"></td>
+    </tr>
+    <tr>
+      <td id ="best5" style="background-color:#f6ed91"></td>
+      <td id = "worst5" style="background-color:rgb(240, 182, 172)"></td>
+    </tr>
+  </table>
+
+ 
+</div>
+
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="data.js"></script>
+<script src="rank.js"></script>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "2210259e-c8ac-44bf-9719-1ce0f073aefa", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5077f1fd-cfd6-4156-9d5c-7af3b7e00779", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+ </script>
+
+</body>
+</html>

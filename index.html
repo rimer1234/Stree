@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stree</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <ul>
+        <li><a class = "active" href="index.html">Home</a></li>
+        <li><a href="rank.html">Rank</a></li>
+        <li><a href="risk.html">Risk</a></li>
+        <li><a href="resource.html">Resources</a></li>
+        <li><a href="Login.html">Community</a></li>
+    </ul>
+    <h1>Stree</h1>
+    <h2 id = "question"></h2>
+    <div class="boxesContainer">
+        <div class="choice">
+            <label for="states">Select a state:</label>
+            <select name="states" id="states" size = "4" style="width:150px;">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                              
+            </select>            
+            <button onclick="Submit()">Show</button>      
+        </div>
+      <div class="cardBox" id = "cb1">
+        <div class="card">
+          <div class="front">
+            <img id = "i1" src="book.png" style="height:20%;">
+            <h4 id="c1"></h4>
+            <p id = "c1_num"></p>
+            <h4 id="c1_end"></h4>
+          </div>
+         </div>
+      </div>
+      <div class="cardBox" id = "cb2">
+        <div class="card">
+          <div class="front">
+            <img id = "i2" src="preg.png" style="height:20%;">
+            <h4 id="c2"></h4>
+            <p id = "c2_num"></p>
+            <h4 id = "c2_end"></h4>
+          </div>
+          </div>
+      </div>
+      <div class="cardBox" id = "cb3">
+        <div class="card">
+          <div class="front">
+            <img id = "i3" src="desc.jpg" style="height:20%;">
+            <h4 id = "c3"></h4>
+            <p id = "c3_num"></p>
+            <h4 id = "c3_end"></h4>
+          </div>
+          </div>
+      </div>
+      <div class="cardBox" id = "cb4">
+        <div class="card">
+          <div class="front">
+            <img id = "i4" src="money.jpg" style="height:20%;">
+            <h4 id="c4"></h4>
+            <p id = "c4_num"></p>
+            <h4 id = "c4_end"></h4>
+            <h4 id = "c4_end2"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="cardBox" id = "cb5">
+        <div class="card">
+          <div class="front">
+            <img id = "i5" src="house.png" style="height:20%;">
+            <h4 id="c5"></h4>
+            <p id = "c5_num"></p>
+            <h4 id = "c5_end"></h4>
+            <h4 id = "c5_end2"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="cardBox" id = "cb6">
+        <div class="card">
+          <div class="front">
+            <img id = "i6" src="cell.png" style="height:20%;">
+            <h4 id="c6"></h4>
+            <p id = "c6_num"></p>
+            <h4 id="c6_end"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="cardBox" id = "cb7">
+        <div class="card">
+          <div class="front">
+            <img id = "i7" src="bank.png" style="height:20%;">
+            <h4 id="c7"></h4>
+            <p id = "c7_num"></p>
+            <h4 id = "c7_end"></h4>
+            <h4 id = "c7_end2"></h4>
+          </div>
+        </div>
+      </div>
+      <div class="cardBox" id = "cb8">
+        <div class="card">
+          <div class="front">
+            <img id = "i8" src="viol.png" style="height:20%;">
+            <h4 id="c8"></h4>
+            <p id = "c8_num"></p>
+            <h4 id="c8_end"></h4>
+            <h4 id="c8_end2"></h4>
+          </div>
+         </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "2210259e-c8ac-44bf-9719-1ce0f073aefa", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5077f1fd-cfd6-4156-9d5c-7af3b7e00779", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+ </script>
+  </body>
+</html>

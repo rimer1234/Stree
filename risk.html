@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stree</title>
+    <link rel="stylesheet" href="risk.css">
+  </head>
+  <body>
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="rank.html">Rank</a></li>
+        <li><a class = "active" href="risk.html">Risk</a></li>
+        <li><a href="resource.html">Resources</a></li>
+        <li><a href="Login.html">Community</a></li>
+    </ul>
+    <h1>Stree</h1>
+    <h2>Domestic Abuse Risk Assessment Tool</h2>
+</div>
+    
+    </div>
+    <div id="qns">
+        <div class="question" id="question-1">
+            <p>Has the physical violence increased in frequency or severity over the past 6 months?</p>
+            <input type="radio" id="question-1-a" name="1">
+            <label for="question-1-a">Yes</label><br>
+            <input type="radio" id="question-1-b"  name="1">
+            <label for="question-1-b">No</label><br>
+        </div>
+
+        <div class="question" id="question-2">
+            <p>Have they ever used a weapon or threatened you with a weapon?</p>
+            <input type="radio" id="question-2-a" name="2">
+            <label for="question-2-a">Yes</label><br>
+            <input type="radio" id="question-2-b" name="2">
+            <label for="question-2-b">No</label><br>
+        </div>
+
+        <div class="question" id="question-3">
+            <p>Do you believe they are capable of killing you?</p>
+            <input type="radio" id="question-3-a" name="3">
+            <label for="question-3-a">Yes</label><br>
+            <input type="radio" id="question-3-b" name="3">
+            <label for="question-3-b">No</label><br>
+        </div>
+
+        <div class="question" id="question-4">
+            <p>Have you ever been beaten by them while you were pregnant?</p>
+            <input type="radio" id="question-4-a" name="4">
+            <label for="question-4-a">Yes</label><br>
+            <input type="radio" id="question-4-b" name="4">
+            <label for="question-4-b">No</label><br>
+        </div>
+
+        <div class="question" id="question-5">
+            <p>Are they violently and constantly jealous of you?</p>
+            <input type="radio" id="question-5-a" name="5">
+            <label for="question-5-a">Yes</label><br>
+            <input type="radio" id="question-5-b" name="5">
+            <label for="question-5-b">No</label><br>
+        </div>
+        <h3 id="res"></h3>
+        <button id = "Submit" onclick="Submit()">Calculate</button>  
+        <br>
+        <a style= "font-size:14px" href = "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1553-2712.2009.00457.x">
+        	Based on Intimate partner violence: development of a brief risk assessment for the emergency department.
+            Snider C, Webster D, O'Sullivan CS, Campbell J. Acad Emerg Med 2009; 16(11):1208-16
+        </a>
+       
+            
+    </div>
+     <script src="risk.js"></script>
+     <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "2210259e-c8ac-44bf-9719-1ce0f073aefa", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5077f1fd-cfd6-4156-9d5c-7af3b7e00779", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+ </script>
+    </body>
+    </html>
