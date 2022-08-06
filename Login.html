@@ -279,13 +279,14 @@ function login()
 {    
     var user = document.getElementById("username");
     localStorage.setItem('username', user.value);
-
+    window.open("community.html")
 }
 
 function slogin()
 {    
     var user = document.getElementById("susername");
     localStorage.setItem('username', user.value);
+    window.open("community.html")
 }
 
 if("username" in localStorage)
