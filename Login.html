@@ -202,7 +202,7 @@ ul {
 
 <div id="id01" class="modal" >
   
-  <form class="modal-content animate" action="/community.html" >
+  <form class="modal-content animate">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           </div>
@@ -279,7 +279,7 @@ function login()
 {    
     var user = document.getElementById("username");
     localStorage.setItem('username', user.value);
-    window.open("community.html")
+    window.open("community.html", "_self")
 
 }
 
@@ -287,12 +287,12 @@ function slogin()
 {    
     var user = document.getElementById("susername");
     localStorage.setItem('username', user.value);
-    window.open("community.html")
+    window.open("community.html", "_self")
 }
 
 if("username" in localStorage)
 {
-    window.open("community.html")
+    window.open("community.html", "_self")
 }
 </script>
 
